@@ -98,11 +98,13 @@ public class ControlFlowExercises {
             System.out.printf("Not a valid number.. go back to school");
         }
 
-
-
-
-
-
+        System.out.printf("%nContinue?");
+        String contin = sc.next();
+        if (contin.equalsIgnoreCase("y")) {
+            System.out.printf("Sorry but you are not going to continue");
+        } else {
+            System.out.printf("Lol ok");
+        }
 
 
     }
