@@ -60,52 +60,52 @@ public class ControlFlowExercises {
 
 
 
-        // Exercise 3
-//        Scanner sc = new Scanner(System.in);
-//        System.out.printf("What number would you like to go to in your table? %n");
-//        int userNum = sc.nextInt();
-//
-//        System.out.printf("Here is your table: %n%nnumber | squared | cubed %n------ | ------- | ------ %n");
-//
-//        for(int i = 1; i <= userNum; i++) {
-//            int numSquared = i*i;
-//            int numCubed = i*i*i;
-//
-//            System.out.printf("%d      |%d        |%d %n", i, numSquared, numCubed);
-//        }
-
-
-
-
-        // Exercise 4
+//         Exercise 3
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Enter a number between 1-100:");
+        System.out.printf("What number would you like to go to in your table? %n");
         int userNum = sc.nextInt();
 
-        System.out.printf("Your grade was: %d%n", userNum);
+        System.out.printf("Here is your table: %n%nnumber | squared | cubed %n------ | ------- | ------ %n");
 
-        if (userNum >= 90 && userNum <= 100) {
-            System.out.printf("Letter Grade: A");
-        } else if (userNum >= 80 && userNum < 90) {
-            System.out.printf("Letter Grade: B");
-        } else if (userNum >= 70 && userNum < 80) {
-            System.out.printf("Letter Grade: C");
-        } else if (userNum >= 60 && userNum < 70) {
-            System.out.printf("Letter Grade: D");
-        } else if (userNum >= 0 && userNum < 60) {
-            System.out.printf("Letter Grade: F");
-        } else {
-            System.out.printf("Not a valid number.. go back to school");
+        for(int i = 1; i <= userNum; i++) {
+            int numSquared = i*i;
+            int numCubed = i*i*i;
+
+            System.out.printf("%-6d | %-7d | %d %n", i, numSquared, numCubed);
         }
 
 
-        System.out.printf("%nContinue?");
-        String contin = sc.next();
-        if (contin.equalsIgnoreCase("y")) {
-            System.out.printf("Sorry but you are not going to continue");
-        } else {
-            System.out.printf("Lol ok");
-        }
+
+
+//         Exercise 4
+//        Scanner sc = new Scanner(System.in);
+//        System.out.printf("Enter a number between 1-100:");
+//        int userNum = sc.nextInt();
+//
+//        System.out.printf("Your grade was: %d%n", userNum);
+//
+//        if (userNum >= 90 && userNum <= 100) {
+//            System.out.printf("Letter Grade: A");
+//        } else if (userNum >= 80 && userNum < 90) {
+//            System.out.printf("Letter Grade: B");
+//        } else if (userNum >= 70 && userNum < 80) {
+//            System.out.printf("Letter Grade: C");
+//        } else if (userNum >= 60 && userNum < 70) {
+//            System.out.printf("Letter Grade: D");
+//        } else if (userNum >= 0 && userNum < 60) {
+//            System.out.printf("Letter Grade: F");
+//        } else {
+//            System.out.printf("Not a valid number.. go back to school");
+//        }
+//
+//
+//        System.out.printf("%nContinue?");
+//        String contin = sc.next();
+//        if (contin.equalsIgnoreCase("y")) {
+//            System.out.printf("Sorry but you are not going to continue");
+//        } else {
+//            System.out.printf("Lol ok");
+//        }
 
 
     }
