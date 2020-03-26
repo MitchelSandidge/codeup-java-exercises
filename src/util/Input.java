@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Input {
 
     private Scanner scanner;
+    private String prompt;
 
     public Input() {
         if (scanner == null) {
@@ -11,8 +12,12 @@ public class Input {
         }
     }
 
-    public String getString() {
-        System.out.println("Enter a string to return:");
+    public String getString(String prompt) {
+        if (prompt != null) {
+            System.out.println(prompt);
+        } else {
+            prompt = "Get String";
+        }
         return scanner.nextLine() + " is your string";
     }
 

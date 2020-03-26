@@ -8,9 +8,11 @@ public class CircleApp {
         Input input = new Input();
         Circle circle = new Circle(input.getDouble());
 
-        System.out.println("Area is: " + circle.getArea());
+//        System.out.println("Area is: " + circle.getArea());
+//
+//        System.out.println("Circumference is: " + circle.getCircumference());
 
-        System.out.println("Circumference is: " + circle.getCircumference());
+        System.out.println(circle.describeDate());
 
     }
 
