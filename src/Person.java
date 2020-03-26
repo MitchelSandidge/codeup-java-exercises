@@ -2,7 +2,9 @@ public class Person {
 
     private String name;
 
-
+    public Person (String name) {
+        this.name = name;
+    }
 
     // returns the person's name
     public String getName(){
@@ -14,13 +16,11 @@ public class Person {
         this.name = name;
     }
     // prints a message to the console using the person's name
-    public void sayHello() {
-        System.out.printf("Hello from %s", name);
+    public String sayHello() {
+        return String.format("\tHello from %s", name);
     }
 
-    public Person (String name) {
-        this.name = name;
-}
+
 
 public static void main(String[] args) {
     Person person = new Person("Mitchel");
