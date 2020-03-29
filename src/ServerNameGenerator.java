@@ -29,6 +29,4 @@ public class ServerNameGenerator {
             }
         } while (cont);
     }
-
-
 }
