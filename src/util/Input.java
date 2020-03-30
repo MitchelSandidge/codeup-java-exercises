@@ -21,8 +21,8 @@ public class Input {
         return scanner.nextLine() + " is your string";
     }
 
-    public boolean yesNo() {
-        System.out.println("Would you like to continue? y/n");
+    public boolean yesNo(String prompt) {
+        System.out.println(prompt);
         if (scanner.next().equalsIgnoreCase("y")) {
             return true;
         } else {
