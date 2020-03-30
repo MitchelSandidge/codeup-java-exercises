@@ -30,14 +30,24 @@ public class Input {
         }
     }
 
-    public int getInt(int min, int max) {
-        System.out.printf("Enter a number between %d and %d: %n", min, max);
-        int userNum = scanner.nextInt();
-        if (userNum > min & userNum < max) {
-            return userNum;
-        } else {
-            return getInt(min, max);
+    //getInt method w/ custom prompt. returns input int between min & max.
+    public int getInt(int x, int y, String prompt) {
+        System.out.print(prompt);
+        String input = scanner.nextLine().trim();
+        int i;
+
+        try {                                    //validation try/catch.
+            i = Integer.parseInt(input.trim());
+        } catch (NumberFormatException nfe) {
+            System.out.println("Invalid format...");
+            return getInt(x, y, prompt);
         }
+
+        if (i < x || i > y) {
+            System.out.println("Number out of range.");
+            return getInt(x, y, prompt);
+        }
+        return i;
     }
 
     public int getInt() {
