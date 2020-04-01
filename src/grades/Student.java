@@ -8,7 +8,7 @@ public class Student {
     // Initializing Variables
     protected String name;
     protected ArrayList<Integer> grades;
-    protected HashMap<String, String> attendance = new HashMap<>();
+    protected HashMap<String, String> attendance;
 
     // Constructor
     public Student(String name) {
@@ -38,6 +38,7 @@ public class Student {
     }
 
 
+    // Adds date and a "P" or "A" Value to the "attendance" HashMap
     public void recordAttendance(String date, String value) {
         if (value.equalsIgnoreCase("A") || value.equalsIgnoreCase("P") && !this.attendance.containsKey(date)) {
             this.attendance.put(date, value.toUpperCase());
@@ -55,16 +56,16 @@ public class Student {
     }
 
 
-    public static void main(String[] args) {
-        Student henry = new Student("Henry");
-        Student bill = new Student("Bill");
-
-        henry.addGrade(98);
-        henry.addGrade(37);
-
-        System.out.println(henry.getName());
-        System.out.println(henry.getGradeAverage());
+//    public static void main(String[] args) {
+//        Student henry = new Student("Henry");
+//        Student bill = new Student("Bill");
+//
+//        henry.addGrade(98);
+//        henry.addGrade(37);
+//
 //        System.out.println(henry.getName());
-    }
+//        System.out.println(henry.getGradeAverage());
+//        System.out.println(henry.getName());
+//    }
 
 }
