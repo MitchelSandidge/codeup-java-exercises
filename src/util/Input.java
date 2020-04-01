@@ -12,22 +12,14 @@ public class Input {
         }
     }
 
-    public String getString(String prompt) {
-        if (prompt != null) {
-            System.out.println(prompt);
-        } else {
-            prompt = "Get String";
-        }
-        return scanner.nextLine() + " is your string";
+    public String getString() {
+        return scanner.nextLine();
     }
 
-    public boolean yesNo(String prompt) {
-        System.out.println(prompt);
-        if (scanner.next().equalsIgnoreCase("y")) {
-            return true;
-        } else {
-            return false;
-        }
+    // The yesNo method should return true if the user enters y, yes, or variants thereof, and false otherwise.
+    public boolean yesNo(){
+        String userString = scanner.nextLine();
+        return userString.equalsIgnoreCase("y") || userString.equalsIgnoreCase("yes");
     }
 
     //getInt method w/ custom prompt. returns input int between min & max.

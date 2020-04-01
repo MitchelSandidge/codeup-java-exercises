@@ -99,11 +99,11 @@ public class MoviesApplication {
                     break;
                 case 8:
                     System.out.println("\nAdd a new movie:\n*----------------------------------------------------*\n");
-                    String title = input.getString("Title: ");
-                    String category = input.getString("Category\n(animated/drama/horror/scifi/comedy/musical): ").toLowerCase();
-                    Movie add = new Movie(title, category);
-                    movies = addMovie(movies,add);
-                    System.out.println("\n" +title + " - added to database.");
+//                    String title = input.getString("Title: ");
+//                    String category = input.getString("Category\n(animated/drama/horror/scifi/comedy/musical): ").toLowerCase();
+//                    Movie add = new Movie(title, category);
+//                    movies = addMovie(movies,add);
+//                    System.out.println("\n" +title + " - added to database.");
                     break;
             }
             System.out.println();

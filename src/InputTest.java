@@ -5,7 +5,7 @@ public class InputTest {
 
     public static void main(String[] args) {
         Input input = new Input();
-        System.out.printf(input.getString("Enter String to ghet the value: "));
+//        System.out.printf(input.getString("Enter String to ghet the value: "));
 //        System.out.println(input.yesNo());
 //        System.out.println(input.getInt(3,10));
 //        System.out.println(input.getInt());
