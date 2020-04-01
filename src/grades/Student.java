@@ -4,14 +4,14 @@ import java.util.ArrayList;
 
 public class Student {
 
+    // Initializing Variables
     protected String name;
-    protected ArrayList grades;
+    protected ArrayList<Integer> grades;
 
-
-
-
+    // Constructor
     public Student(String name) {
         this.name = name;
+        this.grades = new ArrayList<>();
     }
 
 
@@ -23,7 +23,7 @@ public class Student {
         grades.add(grade);
     }
 
-    public double getGradeAverage(ArrayList <Integer> grades) {
+    public double getGradeAverage() {
         Integer sum = 0;
         if(!grades.isEmpty()) {
             for (Integer grade : grades) {
@@ -37,8 +37,14 @@ public class Student {
 
     public static void main(String[] args) {
         Student henry = new Student("Henry");
+        Student bill = new Student("Bill");
+
+        henry.addGrade(98);
+        henry.addGrade(37);
 
         System.out.println(henry.getName());
+        System.out.println(henry.getGradeAverage());
+//        System.out.println(henry.getName());
     }
 
 }
