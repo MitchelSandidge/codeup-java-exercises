@@ -1,17 +1,20 @@
 package grades;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Student {
 
     // Initializing Variables
     protected String name;
     protected ArrayList<Integer> grades;
+    protected HashMap<String, String> attendance = new HashMap<>();
 
     // Constructor
     public Student(String name) {
         this.name = name;
         this.grades = new ArrayList<>();
+        this.attendance = new HashMap<>();
     }
 
 
@@ -32,6 +35,23 @@ public class Student {
             return sum.doubleValue() / grades.size();
         }
         return sum;
+    }
+
+
+    public void recordAttendance(String date, String value) {
+        if (value.equalsIgnoreCase("A") || value.equalsIgnoreCase("P") && !this.attendance.containsKey(date)) {
+            this.attendance.put(date, value.toUpperCase());
+        }
+    }
+
+    public double getAttendanceGrade() {
+        double daysPresent = 0;
+        for(String key : this.attendance.keySet()){
+            if(this.attendance.get(key).equals("P")) {
+                daysPresent++;
+            }
+        }
+        return (daysPresent/this.attendance.size()) * 100;
     }
 
 
