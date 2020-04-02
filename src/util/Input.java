@@ -85,28 +85,28 @@ public class Input {
     }
 
 
-    public String getBinary() {
-        System.out.println("\n\tEnter a number to get its binary value");
-        System.out.print("\n\t>");
-        int num = getInt();
-        String binary = "null";
-
+    public int getBinary() {
+        System.out.println("Enter an Integer to find the binary value:");
+        String str = getString();
+        int in = 0;
         try {
-            binary = Integer.toBinaryString(num);
-
+            in = Integer.parseInt(str);
         } catch (Exception e) {
-            System.err.println("Not a valid number");
+            System.err.println("This is not an Integer");
             return getBinary();
         }
+
+        String biStr = Integer.toBinaryString(in);
+        int binary = Integer.parseInt(biStr);
         return binary;
     }
 
 
     public static void main(String[] args) {
         Input test1 = new Input();
-        System.out.println(test1.getInt());
+//        System.out.println(test1.getInt());
 //        System.out.println(test1.getDouble());
-//        System.out.println(test1.getBinary());
+        System.out.println(test1.getBinary());
     }
 
 
