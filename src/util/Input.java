@@ -42,11 +42,24 @@ public class Input {
         return i;
     }
 
+
+
+
     public int getInt() {
         System.out.println("Enter an integer");
-        String s = scanner.nextLine();
-        return Integer.parseInt(s);
+        String s = getString();
+        int var = 0;
+        try {
+            var = Integer.parseInt(s);
+        } catch (Exception e) {
+            System.err.println("This is not an Integer");
+            e.printStackTrace();
+            return getInt();
+        }
+        return var;
     }
+
+
 
     public double getDouble(double min, double max) {
         System.out.printf("Enter a double between %s and %s: %n", min, max);
@@ -60,9 +73,40 @@ public class Input {
 
     public double getDouble() {
         System.out.println("Enter a double:");
-        String d = scanner.nextLine();
-        return Integer.parseInt(d);
+        String d = getString();
+        double dub = 0;
+        try {
+            dub = Double.parseDouble(d);
+        } catch (Exception e) {
+            System.err.println("That is not a double");
+            return getDouble();
+        }
+        return dub;
+    }
 
+
+    public String getBinary() {
+        System.out.println("\n\tEnter a number to get its binary value");
+        System.out.print("\n\t>");
+        int num = getInt();
+        String binary = "null";
+
+        try {
+            binary = Integer.toBinaryString(num);
+
+        } catch (Exception e) {
+            System.err.println("Not a valid number");
+            return getBinary();
+        }
+        return binary;
+    }
+
+
+    public static void main(String[] args) {
+        Input test1 = new Input();
+        System.out.println(test1.getInt());
+//        System.out.println(test1.getDouble());
+//        System.out.println(test1.getBinary());
     }
 
 
