@@ -102,11 +102,13 @@ public class Input {
     }
 
 
+
     public static void main(String[] args) {
         Input test1 = new Input();
-//        System.out.println(test1.getInt());
+        System.out.println(test1.getInt());
 //        System.out.println(test1.getDouble());
-        System.out.println(test1.getBinary());
+//        System.out.println(test1.getBinary());
+//        System.out.println(test1.getK());
     }
 
 
