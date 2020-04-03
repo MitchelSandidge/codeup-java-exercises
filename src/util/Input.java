@@ -42,9 +42,6 @@ public class Input {
         return i;
     }
 
-
-
-
     public int getInt() {
         System.out.println("Enter an integer");
         String s = getString();
@@ -58,10 +55,6 @@ public class Input {
         }
         return var;
     }
-
-
-
-
 
     public double getDouble(double min, double max) {
         System.out.printf("Enter a double between %s and %s: %n", min, max);
