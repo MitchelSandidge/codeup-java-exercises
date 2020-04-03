@@ -61,6 +61,8 @@ public class Input {
 
 
 
+
+
     public double getDouble(double min, double max) {
         System.out.printf("Enter a double between %s and %s: %n", min, max);
         double userDouble = scanner.nextDouble();
