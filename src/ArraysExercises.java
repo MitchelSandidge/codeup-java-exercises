@@ -47,4 +47,19 @@ public class ArraysExercises {
 
         return addPeople;
     }
+
+    // Method that adds the person to the array
+//    public static Person[] addPerson(Person[] people, Person personArray) {
+//        Person[] addPeople = Arrays.copyOf(people, people.length + 1);
+//        addPeople[addPeople.length - 1] = personArray;
+//
+//        return addPeople;
+//    }
+//    // Method that adds the person to the array
+//    public static Person[] addPerson(Person[] people, Person personArray) {
+//        Person[] addPeople = Arrays.copyOf(people, people.length + 1);
+//        addPeople[addPeople.length - 1] = personArray;
+//
+//        return addPeople;
+//    }
 }
