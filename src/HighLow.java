@@ -27,11 +27,6 @@ public class HighLow {
             } else if (userGuess < randomNum) {
                 System.out.println("HIGHER");
             }
-
-
-
         }
-
-
     }
 }
