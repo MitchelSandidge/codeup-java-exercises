@@ -33,6 +33,7 @@ public class HelloWorld {
         System.out.println(x);
         System.out.println(y);
 
+        System.out.println(addInts001(3,5));
 
 
 
