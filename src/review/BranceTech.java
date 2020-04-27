@@ -33,8 +33,5 @@ public class BranceTech {
         for (Computer computer : brokerComputers) {
             System.out.println("Broken computeres left: " + computer.getName());
         }
-
-
     }
-
 }
