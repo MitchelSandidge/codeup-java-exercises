@@ -14,9 +14,7 @@ public class Warmup {
         System.out.println("hello");
         loop(20);
 
-
-
-
+        System.out.println("This is a test");
     }
 
 
