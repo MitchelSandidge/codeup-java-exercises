@@ -73,7 +73,7 @@ public class Warmup {
     public static void main(String[] args) {
         fizzBuzz();
         System.out.println(isAdmin("notAdmin@gmail.com"));
-        loop(23);
+//        loop(23);
     }
 
 
