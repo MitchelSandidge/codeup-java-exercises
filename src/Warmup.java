@@ -37,44 +37,44 @@ public class Warmup {
 
     }
 
-
-    public static void fizzBuzz() {
-        for (int i = 0; i <= 100; i++) {
-
-            if (i % 3 == 0 && i % 2 == 0) {
-                System.out.println("FizzBuzz");
-            } else if (i % 3 == 0) {
-                System.out.println("Buzz");
-            } else if (i % 2 == 0) {
-                System.out.println("Fizz");
-            } else {
-                System.out.println(i);
-            }
-
-        }
-    }
-
-
-
-    public static boolean isAdmin(String input) {
-        boolean isAdmin;
-
-        if (input.equalsIgnoreCase("iamtheadmin@gmail.com")) {
-            isAdmin = true;
-        } else {
-            isAdmin = false;
-        }
-        return isAdmin;
-    }
-
-
+//
+//    public static void fizzBuzz() {
+//        for (int i = 0; i <= 100; i++) {
+//
+//            if (i % 3 == 0 && i % 2 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else if (i % 3 == 0) {
+//                System.out.println("Buzz");
+//            } else if (i % 2 == 0) {
+//                System.out.println("Fizz");
+//            } else {
+//                System.out.println(i);
+//            }
+//
+//        }
+//    }
+//
+//
+//
+//    public static boolean isAdmin(String input) {
+//        boolean isAdmin;
+//
+//        if (input.equalsIgnoreCase("iamtheadmin@gmail.com")) {
+//            isAdmin = true;
+//        } else {
+//            isAdmin = false;
+//        }
+//        return isAdmin;
+//    }
 
 
-    public static void main(String[] args) {
-        fizzBuzz();
-        System.out.println(isAdmin("notAdmin@gmail.com"));
-//        loop(23);
-    }
+
+
+//    public static void main(String[] args) {
+//        fizzBuzz();
+//        System.out.println(isAdmin("notAdmin@gmail.com"));
+////        loop(23);
+//    }
 
 
 
