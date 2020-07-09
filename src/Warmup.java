@@ -28,6 +28,22 @@ public class Warmup {
         return true;
     }
 
+    public static int fizzBuzz() {
+        int i;
+        for (i = 1; i < 100; i++) {
+            if (i % 15 == 0) {
+                System.out.println(i + " FizzBuzz");
+            } else if (i % 5 == 0) {
+                System.out.println(i + " Buzz");
+            } else if (i % 3 == 0) {
+                System.out.println(i +" Fizz");
+            } else {
+                System.out.println(i);
+            }
+        }
+        return i;
+    }
+
 
 
 
@@ -40,8 +56,9 @@ public class Warmup {
 //        System.out.println(isPalindrome("helleh"));
 
 
-        loopToThirty();
+//        loopToThirty();
 
+        System.out.println(fizzBuzz());
 
     }
 
