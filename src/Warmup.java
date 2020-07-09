@@ -8,6 +8,12 @@ public class Warmup {
         }
     }
 
+    public static void loopToThirty() {
+        int i;
+        for (i = 0; i <= 30; i++) {
+            System.out.println(i);
+        }
+    }
 
 
     public static boolean isPalindrome(String str)
@@ -26,13 +32,15 @@ public class Warmup {
 
 
     public static void main(String[] args) {
-        System.out.println("hello");
-        loop(20);
+//        System.out.println("hello");
+//        loop(20);
 
-        System.out.println("This is a test");
+//        System.out.println("This is a test");
 
-        System.out.println(isPalindrome("helleh"));
+//        System.out.println(isPalindrome("helleh"));
 
+
+        loopToThirty();
 
 
     }
