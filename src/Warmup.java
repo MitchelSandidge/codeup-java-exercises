@@ -16,6 +16,15 @@ public class Warmup {
     }
 
 
+    public static void countToNum(int num) {
+        int i;
+        for (i = 0; i <= num; i++) {
+            System.out.println(i);
+        }
+            System.out.println("The number the user counted to was: " + num);
+    }
+
+
     public static boolean isPalindrome(String str)
     {
         int i = 0, x = str.length() - 1;
@@ -58,7 +67,9 @@ public class Warmup {
 
 //        loopToThirty();
 
-        System.out.println(fizzBuzz());
+//        System.out.println(fizzBuzz());
+
+        countToNum(18);
 
     }
 
