@@ -5,7 +5,6 @@ public class NewHighLow {
         Scanner sc = new Scanner(System.in);
 
         int randomNum = (int) (Math.random() * 100) + 1;
-//        System.out.println(randomNum);
         boolean continueHighLow = true;
 
         System.out.println("Guess the random number from 1 - 100");
