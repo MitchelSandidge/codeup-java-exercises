@@ -26,7 +26,5 @@ public class Bob {
             System.out.printf("Continue talking to Bob? Y/N %n");
             continueConvo = sc.nextLine();
         }
-
-
     }
 }
