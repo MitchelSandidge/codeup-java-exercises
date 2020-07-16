@@ -57,17 +57,17 @@ public class Warmup {
 
 
     public static void main(String[] args) {
-//        System.out.println("hello");
-//        loop(20);
+        System.out.println("hello");
+        loop(20);
 
-//        System.out.println("This is a test");
+        System.out.println("This is a test");
 
-//        System.out.println(isPalindrome("helleh"));
+        System.out.println(isPalindrome("helleh"));
 
 
-//        loopToThirty();
+        loopToThirty();
 
-//        System.out.println(fizzBuzz());
+        System.out.println(fizzBuzz());
 
         countToNum(18);
 
