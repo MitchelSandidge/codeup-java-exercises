@@ -19,6 +19,14 @@ public class Warmup {
 //        }
 //    }
 //
+
+
+    public static void countToNum(int high) {
+        for (int i = 1; i <= high; i++) {
+            System.out.println(i);
+        }
+        System.out.println("The highest number is: " + high);
+    }
 //
 //    public static void countToNum(int num) {
 //        int i;
@@ -134,8 +142,10 @@ public class Warmup {
 //        fizzBuzz();
 //        System.out.println(isAdmin("notAdmin@gmail.com"));
 //        loop(23);
-        System.out.println(helloCami());
+//        System.out.println(helloCami());
+        countToNum(35);
     }
+
 
 
 
