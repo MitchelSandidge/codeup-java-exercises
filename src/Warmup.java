@@ -1,6 +1,10 @@
 public class Warmup {
 
 
+    public static String helloCami() {
+        return ("Hey Cami, Whats up?!");
+    }
+
 //    public static void loop(int lrg) {
 //        int i;
 //        for (i = 0; i < lrg; i++) {
@@ -127,9 +131,10 @@ public class Warmup {
 
 
     public static void main(String[] args) {
-        fizzBuzz();
-        System.out.println(isAdmin("notAdmin@gmail.com"));
+//        fizzBuzz();
+//        System.out.println(isAdmin("notAdmin@gmail.com"));
 //        loop(23);
+        System.out.println(helloCami());
     }
 
 
